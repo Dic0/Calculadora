@@ -1,0 +1,86 @@
+.fundo{
+    background: linear-gradient(45deg, red, red, purple, blue, purple, red, red,purple, blue, purple, red, red,purple, 
+    purple, blue, purple, red, red,purple, blue, purple, red, red,blue, purple, red, red,purple, blue, purple, red, red);
+    background-size: 700% 700%;
+    animation: colors 45s ease infinite;
+    color: white;
+    text-align: center;
+    display: flex;
+    height: 97.8vh;
+    width: 192vh;
+    border-radius: 15px;
+  }
+  @keyframes colors {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+  .calculadora{
+    position: absolute;
+    background-color: rgba(255,255,255,0.7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 1px;
+    background-color: rgb(242, 242, 242);
+    font-family: 'Special Elite', monospace;
+    border-radius: 5px;
+  }
+  .botao:hover{
+    background-color: rgb(255, 255, 255); 
+  }
+  .botao:active{
+  position:relative;
+  top: 3px;
+ }
+  .botao2{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 1px;
+    background-color: rgb(242, 242, 242);
+    color: orange;
+    border-radius: 5px;
+    font-family: 'Special Elite', monospace;
+    transition: all ease 0.6s;
+  }
+  .botao2:hover{
+    background-color: rgb(0, 0, 0); 
+  }
+  .botao2:active{
+  position:relative;
+  top: 3px;
+  }
+  #resultado{
+    background-color: rgb(240,248,255);
+    width: 202px;
+    height: 20px;
+    margin: 5px;
+    font-size: 20px; 
+    color: black;
+    text-align: right;
+    padding: 5px;
+    font-family: 'Special Elite', monospace;
+  }
+  h1{
+    background: linear-gradient(20deg, rgb(0, 0, 0) 40%, rgb(0, 0, 0) 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Special Elite', monospace;
+  } 
